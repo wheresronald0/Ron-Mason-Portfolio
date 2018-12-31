@@ -9,7 +9,7 @@ header {
 }
 
 footer {
-  height: 300px;
+  height: 100px;
   background-color: rgb(80, 80, 80);
 }
 
@@ -57,7 +57,7 @@ footer {
 }
 
 #idText {
-  color: rgb(111, 214, 97);
+  color: rgb(141, 243, 128);
   font-size: 2.5em;
   font-weight: 200;
 }
@@ -106,4 +106,33 @@ footer {
 .portfolioThumbnails {
   height: 100%;
   box-shadow: 1px 2px 7px 0 grey;
+}
+
+/* // */
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.projectDescription {
+  width: 300px;
+  margin: 30px 0 0 40px;
+}
+
+.imageContainer {
+  height: 500px;
+  width: 300px;
+  margin: 30px 0 80px 100px;
+}
+
+.portfolioThumbnails {
+  margin: 0 0 0 0;
+  height: 100%;
+
+  justify-content: right;
+  box-shadow: 1px 2px 7px 0 grey;
+}
+
+#projects {
+  margin-top: 70px;
 }
