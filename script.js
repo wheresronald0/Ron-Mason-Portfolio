@@ -6,87 +6,121 @@ $(function() {
 //   $("#myCarousel").carousel(1);
 // });
 
+function animateCarousel() {}
+
+//
+
 function animateCarousel() {
   if (!document.getElementById("reactLogo")) {
-    var parent = document.getElementById("cItem");
-    var img = document.createElement("img");
-    img.setAttribute("src", "assets/Crescent-City.png");
-    img.setAttribute("class", "d-block w-100");
-    parent.appendChild(img);
+    //adding footer
+    footerAdd = document.getElementById("projectCarousel");
+    let footer = document.createElement("footer");
+    footerAdd.appendChild(footer);
+
+    //adding animation to carousel
+    let carouselParent = document.getElementById("cItem1");
+    let projectImg = document.createElement("img");
+    projectImg.setAttribute("src", "assets/Crescent-City.png");
+    projectImg.setAttribute("class", "d-block w-100");
+    carouselParent.appendChild(projectImg);
     document
       .getElementById("projectCarousel")
       .setAttribute("class", "container animated bounceInUp delay-0s");
 
-    //creat project titles and logos
-    var thumbParent = document.getElementById("projectSelector");
-    var div1 = document.createElement("div");
-    div1.setAttribute(
-      "class",
-      "d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2 animated bounceInDown delay-0s"
-    );
+    //others on carousel
+    let carouselParent2 = document.getElementById("cItem2");
+    let projectImg2 = document.createElement("img");
+    projectImg2.setAttribute("src", "assets/Gift-Run.png");
+    projectImg2.setAttribute("class", "d-block w-100");
+    carouselParent2.appendChild(projectImg2);
 
-    var anchorTag = document.createElement("a");
-    anchorTag.setAttribute("data-target", "#carouselExampleIndicators");
-    anchorTag.setAttribute("data-slide-to", "0");
+    let carouselParent3 = document.getElementById("cItem3");
+    let projectImg3 = document.createElement("img");
+    projectImg3.setAttribute("src", "assets/PIQ-Share.png");
+    projectImg3.setAttribute("class", "d-block w-100");
+    carouselParent3.appendChild(projectImg3);
 
-    var div2 = document.createElement("div");
+    let carouselParent4 = document.getElementById("cItem4");
+    let projectImg4 = document.createElement("img");
+    projectImg4.setAttribute("src", "assets/Movie-Search.png");
+    projectImg4.setAttribute("class", "d-block w-100");
+    carouselParent4.appendChild(projectImg4);
 
-    var aPara = document.createElement("p");
-    aPara.innerHTML = "Crescent City Donuts";
+    let carouselParent5 = document.getElementById("cItem5");
+    let projectImg5 = document.createElement("img");
+    projectImg5.setAttribute("src", "assets/Seinfeld-Simpn.png");
+    projectImg5.setAttribute("class", "d-block w-100");
+    carouselParent5.appendChild(projectImg5);
 
-    var div3 = document.createElement("div");
-    div3.setAttribute("class", "imgC");
+    let carouselParent6 = document.getElementById("cItem6");
+    let projectImg6 = document.createElement("img");
+    projectImg6.setAttribute("src", "assets/Fortnite-Character-Selector.png");
+    projectImg6.setAttribute("class", "d-block w-100");
+    carouselParent6.appendChild(projectImg6);
 
-    var thumbImg = document.createElement("img");
-    thumbImg.setAttribute("src", "assets/react_logo.png");
-    thumbImg.setAttribute("id", "reactLogo");
-    thumbImg.setAttribute("class", "animated pulse delay-1s");
+    for (var i = 0; i <= 5; i++) {
+      let names = [
+        "Crescent City Donuts",
+        "Gift-RUN",
+        "PiQ Share",
+        "Movie Search",
+        "Seinfeld-Simon",
+        "Fortnite Characters"
+      ];
+      let projectImageLocations = [
+        "assets/react_logo.png",
+        "assets/react_logo.png",
+        "assets/react_logo.png",
+        "assets/react_logo.png",
+        "assets/react_logo.png",
+        "assets/react_logo.png"
+      ];
 
-    div3.appendChild(thumbImg);
-    div2.appendChild(aPara);
+      let projectImages = [
+        "assets/Crescent-City.png",
+        "assets/Gift-Run.png",
+        "assets/PIQ-Share.png",
+        "assets/Movie-Search.png",
+        "assets/Seinfeld-Simpn.png",
+        "assets/Fortnite-Character-Selector.png"
+      ];
 
-    anchorTag.appendChild(div2);
-    anchorTag.appendChild(div3);
+      //creat project titles and logos
+      let thumbParent = document.getElementById("projectSelector");
+      let div1 = document.createElement("div");
+      div1.setAttribute(
+        "class",
+        "d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2 animated bounceInDown delay-0s"
+      );
 
-    div1.appendChild(anchorTag);
-    thumbParent.appendChild(div1);
+      let anchorTag = document.createElement("a");
+      anchorTag.setAttribute("data-target", "#carouselExampleIndicators");
+      anchorTag.setAttribute("data-slide-to", [i]);
+
+      let div2 = document.createElement("div");
+
+      let aPara = document.createElement("p");
+      aPara.innerHTML = names[i];
+
+      let div3 = document.createElement("div");
+      div3.setAttribute("class", "imgC");
+
+      let thumbImg = document.createElement("img");
+      thumbImg.setAttribute("src", projectImageLocations[i]);
+      thumbImg.setAttribute("id", "reactLogo");
+      thumbImg.setAttribute("class", "animated rubberBand delay-1s");
+
+      div3.appendChild(thumbImg);
+      div2.appendChild(aPara);
+
+      anchorTag.appendChild(div2);
+      anchorTag.appendChild(div3);
+
+      div1.appendChild(anchorTag);
+      thumbParent.appendChild(div1);
+    }
   }
 }
-
-// function createThumbs() {
-//   var thumbParent = document.getElementById("projectSelector");
-//   var div1 = document.createElement("div");
-//   div1.setAttribute(
-//     "class",
-//     "d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
-//   );
-
-//   var anchorTag = document.createElement("a");
-//   anchorTag.setAttribute("data-target", "#carouselExampleIndicators");
-//   anchorTag.setAttribute("data-slide-to", "0");
-
-//   var div2 = document.createElement("div");
-
-//   var aPara = document.createElement("p");
-//   aPara.innerHTML = "Crescent City Donuts";
-
-//   var div3 = document.createElement("div");
-//   div3.setAttribute("class", "imgC");
-
-//   var thumbImg = document.createElement("img");
-//   thumbImg.setAttribute("src", "assets/react_logo.png");
-//   thumbImg.setAttribute("id", "reactLogo");
-//   thumbImg.setAttribute("class", "animated flip delay-0s");
-
-//   div3.appendChild(thumbImg);
-//   div2.appendChild(aPara);
-
-//   anchorTag.appendChild(div2);
-//   anchorTag.appendChild(div3);
-
-//   div1.appendChild(anchorTag);
-//   thumbParent.appendChild(div1);
-// }
 
 {
   /* <div
@@ -203,4 +237,100 @@ function animateCarousel() {
           <span class="sr-only">Next</span>
         </a>
       </div> */
+}
+
+//titles and logos
+
+{
+  /* <div
+class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
+>
+<a data-target="#carouselExampleIndicators" data-slide-to="0">
+  <div><p>Crescent City Donuts</p></div>
+
+  <div class="imgC">
+    <img
+      src="assets/react_logo.png"
+      id="reactLogo"
+      class="animated flip delay-3s"
+    />
+  </div>
+</a>
+</div>
+<div
+class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
+>
+<a data-target="#carouselExampleIndicators" data-slide-to="1">
+  <div><p>Gift-RUN</p></div>
+
+  <div class="imgC">
+    <img
+      src="assets/react_logo.png"
+      id="reactLogo"
+      class="animated flip delay-3s"
+    />
+  </div>
+</a>
+</div>
+<div
+class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
+>
+<a data-target="#carouselExampleIndicators" data-slide-to="2">
+  <div><p>PiQ Share</p></div>
+
+  <div class="imgC">
+    <img
+      src="assets/react_logo.png"
+      id="reactLogo"
+      class="animated flip delay-3s"
+    />
+  </div>
+</a>
+</div>
+<div
+class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
+>
+<a data-target="#carouselExampleIndicators" data-slide-to="3">
+  <div><p>Movie-Search</p></div>
+
+  <div class="imgC">
+    <img
+      src="assets/react_logo.png"
+      id="reactLogo"
+      class="animated flip delay-3s"
+    />
+  </div>
+</a>
+</div>
+<div
+class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
+>
+<a data-target="#carouselExampleIndicators" data-slide-to="4">
+  <div><p>Seinfeld-Simon</p></div>
+
+  <div class="imgC">
+    <img
+      src="assets/react_logo.png"
+      id="reactLogo"
+      class="animated flip delay-3s"
+    />
+  </div>
+</a>
+</div>
+<div
+class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
+>
+<a data-target="#carouselExampleIndicators" data-slide-to="5">
+  <div><p>Fortnite Character</p></div>
+
+  <div class="imgC">
+    <img
+      src="assets/react_logo.png"
+      id="reactLogo"
+      class="animated flip delay-3s"
+    />
+  </div>
+</a>
+</div> 
+ */
 }
