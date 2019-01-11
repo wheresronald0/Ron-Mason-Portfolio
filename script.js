@@ -2,6 +2,10 @@ $(function() {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
+$(function() {
+  $('[data-toggle="popover"]').popover();
+});
+
 // $(function() {
 //   $("#myCarousel").carousel(1);
 // });
@@ -56,6 +60,7 @@ function animateCarousel() {
     let projectImg6 = document.createElement("img");
     projectImg6.setAttribute("src", "assets/Fortnite-Character-Selector.png");
     projectImg6.setAttribute("class", "d-block w-100");
+
     carouselParent6.appendChild(projectImg6);
 
     for (var i = 0; i <= 5; i++) {
@@ -95,7 +100,7 @@ function animateCarousel() {
 
       let anchorTag = document.createElement("a");
       anchorTag.setAttribute("data-target", "#carouselExampleIndicators");
-      anchorTag.setAttribute("data-slide-to", [i]);
+      anchorTag.setAttribute("data-slide-to", i);
 
       let div2 = document.createElement("div");
 

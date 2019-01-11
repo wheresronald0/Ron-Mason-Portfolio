@@ -20,7 +20,7 @@ footer {
 }
 
 .carousel-caption {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .imgC {
@@ -38,6 +38,23 @@ footer {
 /* #projectSelector {
   height: 150px;
 } */
+
+/* /MODAL STYLING/ */
+.modal-header {
+  background-color: black;
+  color: white;
+}
+.modal-content {
+  background-color: rgb(235, 235, 235);
+}
+
+#githubContainer {
+  height: 50px;
+}
+
+#githubLogo {
+  height: 100%;
+}
 
 @media (min-width: 576px) {
   ...;
