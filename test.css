@@ -41,11 +41,11 @@ footer {
 
 /* /MODAL STYLING/ */
 .modal-header {
-  background-color: black;
+  background-color: rgb(31, 31, 31);
   color: white;
 }
 .modal-content {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(247, 247, 247);
 }
 
 #githubContainer {
@@ -54,6 +54,10 @@ footer {
 
 #githubLogo {
   height: 100%;
+}
+
+.btn-outline-secondary.custom-btn {
+  border: none;
 }
 
 @media (min-width: 576px) {
