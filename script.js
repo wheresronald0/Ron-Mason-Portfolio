@@ -14,6 +14,7 @@ function animateCarousel() {}
 
 //
 
+//VERY WET
 function animateCarousel() {
   if (!document.getElementById("reactLogo")) {
     //adding footer
@@ -23,45 +24,74 @@ function animateCarousel() {
 
     //adding animation to carousel
     let carouselParent = document.getElementById("cItem1");
+    let carouselAnchorTag = document.createElement("a");
+    carouselAnchorTag.setAttribute("href", "#");
+    carouselAnchorTag.setAttribute("data-toggle", "modal");
+    carouselAnchorTag.setAttribute("data-target", "#crescentCityDonutsModal");
     let projectImg = document.createElement("img");
     projectImg.setAttribute("src", "assets/Crescent-City.png");
     projectImg.setAttribute("class", "d-block w-100");
-    carouselParent.appendChild(projectImg);
+    carouselAnchorTag.appendChild(projectImg);
+    carouselParent.appendChild(carouselAnchorTag);
     document
       .getElementById("projectCarousel")
       .setAttribute("class", "container animated bounceInUp delay-0s");
 
     //others on carousel
     let carouselParent2 = document.getElementById("cItem2");
+    let carouselAnchorTag2 = document.createElement("a");
+    carouselAnchorTag2.setAttribute("href", "#");
+    carouselAnchorTag2.setAttribute("data-toggle", "modal");
+    carouselAnchorTag2.setAttribute("data-target", "#giftRunModal");
     let projectImg2 = document.createElement("img");
     projectImg2.setAttribute("src", "assets/Gift-Run.png");
     projectImg2.setAttribute("class", "d-block w-100");
-    carouselParent2.appendChild(projectImg2);
+    carouselAnchorTag2.appendChild(projectImg2);
+    carouselParent2.appendChild(carouselAnchorTag2);
 
     let carouselParent3 = document.getElementById("cItem3");
+    let carouselAnchorTag3 = document.createElement("a");
+    carouselAnchorTag3.setAttribute("href", "#");
+    carouselAnchorTag3.setAttribute("data-toggle", "modal");
+    carouselAnchorTag3.setAttribute("data-target", "#piqShareModal");
     let projectImg3 = document.createElement("img");
     projectImg3.setAttribute("src", "assets/PIQ-Share.png");
     projectImg3.setAttribute("class", "d-block w-100");
-    carouselParent3.appendChild(projectImg3);
+    carouselAnchorTag3.appendChild(projectImg3);
+    carouselParent3.appendChild(carouselAnchorTag3);
 
     let carouselParent4 = document.getElementById("cItem4");
+    let carouselAnchorTag4 = document.createElement("a");
+    carouselAnchorTag4.setAttribute("href", "#");
+    carouselAnchorTag4.setAttribute("data-toggle", "modal");
+    carouselAnchorTag4.setAttribute("data-target", "#movieSearchModal");
     let projectImg4 = document.createElement("img");
     projectImg4.setAttribute("src", "assets/Movie-Search.png");
     projectImg4.setAttribute("class", "d-block w-100");
-    carouselParent4.appendChild(projectImg4);
+    carouselAnchorTag4.appendChild(projectImg4);
+    carouselParent4.appendChild(carouselAnchorTag4);
 
     let carouselParent5 = document.getElementById("cItem5");
+    let carouselAnchorTag5 = document.createElement("a");
+    carouselAnchorTag5.setAttribute("href", "#");
+    carouselAnchorTag5.setAttribute("data-toggle", "modal");
+    carouselAnchorTag5.setAttribute("data-target", "#seinfeldSimonModal");
     let projectImg5 = document.createElement("img");
     projectImg5.setAttribute("src", "assets/Seinfeld-Simpn.png");
     projectImg5.setAttribute("class", "d-block w-100");
-    carouselParent5.appendChild(projectImg5);
+    carouselAnchorTag5.appendChild(projectImg5);
+    carouselParent5.appendChild(carouselAnchorTag5);
 
     let carouselParent6 = document.getElementById("cItem6");
+    let carouselAnchorTag6 = document.createElement("a");
+    carouselAnchorTag6.setAttribute("href", "#");
+    carouselAnchorTag6.setAttribute("data-toggle", "modal");
+    carouselAnchorTag6.setAttribute("data-target", "#seinfeldSimonModal");
     let projectImg6 = document.createElement("img");
     projectImg6.setAttribute("src", "assets/Fortnite-Character-Selector.png");
     projectImg6.setAttribute("class", "d-block w-100");
-
-    carouselParent6.appendChild(projectImg6);
+    carouselAnchorTag6.appendChild(projectImg6);
+    carouselParent6.appendChild(carouselAnchorTag6);
 
     for (var i = 0; i <= 5; i++) {
       let names = [
