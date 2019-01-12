@@ -86,7 +86,7 @@ function animateCarousel() {
     let carouselAnchorTag6 = document.createElement("a");
     carouselAnchorTag6.setAttribute("href", "#");
     carouselAnchorTag6.setAttribute("data-toggle", "modal");
-    carouselAnchorTag6.setAttribute("data-target", "#seinfeldSimonModal");
+    carouselAnchorTag6.setAttribute("data-target", "#fortniteModal");
     let projectImg6 = document.createElement("img");
     projectImg6.setAttribute("src", "assets/Fortnite-Character-Selector.png");
     projectImg6.setAttribute("class", "d-block w-100");
@@ -103,12 +103,12 @@ function animateCarousel() {
         "Fortnite Characters"
       ];
       let projectImageLocations = [
-        "assets/react_logo.png",
-        "assets/react_logo.png",
-        "assets/react_logo.png",
-        "assets/react_logo.png",
-        "assets/react_logo.png",
-        "assets/react_logo.png"
+        "assets/ccd_thumb.png",
+        "assets/gr_thumb.jpg",
+        "assets/ps_thumb.jpg",
+        "assets/ms_thumb.png",
+        "assets/ss_thumb.png",
+        "assets/fn_thumb.png"
       ];
 
       let projectImages = [
@@ -125,7 +125,7 @@ function animateCarousel() {
       let div1 = document.createElement("div");
       div1.setAttribute(
         "class",
-        "d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2 animated bounceInDown delay-0s"
+        "d-flex flex-column flex-direction: column justify-content-end mt-3 mb-2 col-sm-6 col-md-4 col-lg-2 animated bounceInDown delay-0s"
       );
 
       let anchorTag = document.createElement("a");
@@ -145,11 +145,14 @@ function animateCarousel() {
       thumbImg.setAttribute("id", "reactLogo");
       thumbImg.setAttribute("class", "animated rubberBand delay-1s");
 
+      let hr = document.createElement("hr");
+
       div3.appendChild(thumbImg);
       div2.appendChild(aPara);
 
-      anchorTag.appendChild(div2);
       anchorTag.appendChild(div3);
+      anchorTag.appendChild(div2);
+      anchorTag.appendChild(hr);
 
       div1.appendChild(anchorTag);
       thumbParent.appendChild(div1);
@@ -276,96 +279,93 @@ function animateCarousel() {
 
 //titles and logos
 
-{
-  /* <div
-class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
->
-<a data-target="#carouselExampleIndicators" data-slide-to="0">
-  <div><p>Crescent City Donuts</p></div>
+// <div
+// class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
+// >
+// <a data-target="#carouselExampleIndicators" data-slide-to="0">
+//   <div><p>Crescent City Donuts</p></div>
 
-  <div class="imgC">
-    <img
-      src="assets/react_logo.png"
-      id="reactLogo"
-      class="animated flip delay-3s"
-    />
-  </div>
-</a>
-</div>
-<div
-class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
->
-<a data-target="#carouselExampleIndicators" data-slide-to="1">
-  <div><p>Gift-RUN</p></div>
+//   <div class="imgC">
+//     <img
+//       src="assets/react_logo.png"
+//       id="reactLogo"
+//       class="animated flip delay-3s"
+//     />
+//   </div>
+// </a>
+// </div>
+// <div
+// class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
+// >
+// <a data-target="#carouselExampleIndicators" data-slide-to="1">
+//   <div><p>Gift-RUN</p></div>
 
-  <div class="imgC">
-    <img
-      src="assets/react_logo.png"
-      id="reactLogo"
-      class="animated flip delay-3s"
-    />
-  </div>
-</a>
-</div>
-<div
-class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
->
-<a data-target="#carouselExampleIndicators" data-slide-to="2">
-  <div><p>PiQ Share</p></div>
+//   <div class="imgC">
+//     <img
+//       src="assets/react_logo.png"
+//       id="reactLogo"
+//       class="animated flip delay-3s"
+//     />
+//   </div>
+// </a>
+// </div>
+// <div
+// class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
+// >
+// <a data-target="#carouselExampleIndicators" data-slide-to="2">
+//   <div><p>PiQ Share</p></div>
 
-  <div class="imgC">
-    <img
-      src="assets/react_logo.png"
-      id="reactLogo"
-      class="animated flip delay-3s"
-    />
-  </div>
-</a>
-</div>
-<div
-class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
->
-<a data-target="#carouselExampleIndicators" data-slide-to="3">
-  <div><p>Movie-Search</p></div>
+//   <div class="imgC">
+//     <img
+//       src="assets/react_logo.png"
+//       id="reactLogo"
+//       class="animated flip delay-3s"
+//     />
+//   </div>
+// </a>
+// </div>
+// <div
+// class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
+// >
+// <a data-target="#carouselExampleIndicators" data-slide-to="3">
+//   <div><p>Movie-Search</p></div>
 
-  <div class="imgC">
-    <img
-      src="assets/react_logo.png"
-      id="reactLogo"
-      class="animated flip delay-3s"
-    />
-  </div>
-</a>
-</div>
-<div
-class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
->
-<a data-target="#carouselExampleIndicators" data-slide-to="4">
-  <div><p>Seinfeld-Simon</p></div>
+//   <div class="imgC">
+//     <img
+//       src="assets/react_logo.png"
+//       id="reactLogo"
+//       class="animated flip delay-3s"
+//     />
+//   </div>
+// </a>
+// </div>
+// <div
+// class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
+// >
+// <a data-target="#carouselExampleIndicators" data-slide-to="4">
+//   <div><p>Seinfeld-Simon</p></div>
 
-  <div class="imgC">
-    <img
-      src="assets/react_logo.png"
-      id="reactLogo"
-      class="animated flip delay-3s"
-    />
-  </div>
-</a>
-</div>
-<div
-class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
->
-<a data-target="#carouselExampleIndicators" data-slide-to="5">
-  <div><p>Fortnite Character</p></div>
+//   <div class="imgC">
+//     <img
+//       src="assets/react_logo.png"
+//       id="reactLogo"
+//       class="animated flip delay-3s"
+//     />
+//   </div>
+// </a>
+// </div>
+// <div
+// class="d-flex flex-column flex-direction: column justify-content-between col-sm-6 col-md-4 col-lg-2"
+// >
+// <a data-target="#carouselExampleIndicators" data-slide-to="5">
+//   <div><p>Fortnite Character</p></div>
 
-  <div class="imgC">
-    <img
-      src="assets/react_logo.png"
-      id="reactLogo"
-      class="animated flip delay-3s"
-    />
-  </div>
-</a>
-</div> 
- */
-}
+//   <div class="imgC">
+//     <img
+//       src="assets/react_logo.png"
+//       id="reactLogo"
+//       class="animated flip delay-3s"
+//     />
+//   </div>
+// </a>
+// </div>

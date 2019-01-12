@@ -6,8 +6,12 @@
   position: relative;
 } */
 
+body {
+  font-family: "Julius Sans One", sans-serif;
+}
+
 footer {
-  height: 50px;
+  height: 100px;
 }
 
 /* # #tester {
@@ -41,11 +45,15 @@ footer {
 
 /* /MODAL STYLING/ */
 .modal-header {
-  background-color: rgb(31, 31, 31);
+  height: 35px;
+  background-color: black;
   color: white;
+  align-content: top;
 }
+
 .modal-content {
-  background-color: rgb(247, 247, 247);
+  background-color: white;
+  color: rgb(0, 0, 0);
 }
 
 #githubContainer {
