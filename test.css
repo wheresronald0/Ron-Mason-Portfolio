@@ -14,6 +14,35 @@ footer {
   height: 100px;
 }
 
+#jumboImage {
+  background-image: url("assets/code_bg.jpg");
+  background-size: cover;
+  height: 800px;
+}
+
+#myName {
+  margin-top: 15%;
+}
+#myTitle {
+  font-family: "Cutive Mono", monospace;
+}
+#selfPicContainer {
+  height: 100px;
+  width: 100px;
+}
+#selfPicContainer img {
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+.fab {
+  color: rgb(31, 136, 221);
+}
+
+.fas {
+  color: grey;
+}
+
 /* # #tester {
   position: absolute;
 } */

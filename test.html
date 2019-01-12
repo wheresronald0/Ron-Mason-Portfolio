@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Julius+Sans+One"
+      href="https://fonts.googleapis.com/css?family=Cutive+Mono|Julius+Sans+One"
       rel="stylesheet"
     />
     <link
@@ -37,62 +37,95 @@
     <title>Ron Mason Portfolio</title>
   </head>
   <body>
-    <div class="jumbotron jumbotron-fluid p-0">
-      <nav class="navbar sticky-top navbar-expand-md">
-        <div class="container">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link text-white"
-                  href="#tester"
-                  onclick="animateCarousel()"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  About Me
-                </a>
-                <div
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <a class="dropdown-item" href="#">Bio</a>
-                  <a class="dropdown-item" href="#">Resume</a>
-                  <a class="dropdown-item" href="#">Get in Touch</a>
-                  <a class="dropdown-item" href="#">Linkedin</a>
-                </div>
-              </li>
-            </ul>
+    <div id="jumboImage" class="jumbotron jumbotron-fluid p-0 m-0">
+      <div class="container">
+        <nav class="navbar sticky-top navbar-expand-md">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white"
+                    href="#tester"
+                    onclick="animateCarousel()"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    About Me
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-user-circle"></i> Bio</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="assets/Ron Mason Resume_WD.pdf"
+                      download
+                    >
+                      <i class="fas fa-file"></i> Resume
+                    </a>
+                    <a
+                      class="dropdown-item"
+                      href="mailto:wheresronald0@gmail.com@?Subject=Hello"
+                    >
+                      <i class="fas fa-at"></i> Get in Touch
+                    </a>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.linkedin.com/in/ronnmason/"
+                    >
+                      <i class="fab fa-linkedin"></i> Linkedin
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-      <img
+        </nav>
+      </div>
+
+      <div id="myName" class="container ml-5">
+        <h1 class="text-white">Ron Mason</h1>
+        <h3 id="myTitle">
+          <span class="text-success">id </span
+          ><span class="text-white">= </span>
+          <span class="text-warning">"front-end_developer"</span>
+        </h3>
+        <!-- <div id="selfPicContainer">
+            <img src="assets/self.jpg" alt="" />
+        </div> -->
+      </div>
+
+      <!-- <img
         class="img-fluid"
         id="codeBg"
         alt="Responsive image"
         src="assets/code_bg.jpg"
-      />
+      /> -->
     </div>
 
     <div class="container" id="tester">
