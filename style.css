@@ -1,137 +1,115 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-header {
-  height: 70px;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 footer {
   height: 100px;
-  background-color: rgb(80, 80, 80);
 }
 
-#navItems {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  font-size: 1.3em;
+#jumboImage {
+  background-image: url("assets/code_bg.jpg");
+  background-size: cover;
+  height: 800px;
+  margin-bottom: 0;
 }
-#navItems a {
-  text-decoration: none;
-  padding: 0 40px;
+
+.fas.fa-bars {
+  color: white;
 }
-#navItems a i {
-  text-decoration: none;
-  font-size: 1.6em;
+
+#myName {
+  margin-top: 15%;
+}
+#myTitle {
+  font-family: "Cutive Mono", monospace;
+}
+
+.fab {
   color: rgb(31, 136, 221);
 }
 
-#navItems a p {
-  color: black;
-  text-decoration: none;
+.fas {
+  color: grey;
 }
 
-#navItems a p:hover {
-  color: rgb(0, 160, 252);
+#selfPicContainer {
+  height: 100px;
+}
+#selfPic {
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 50px;
 }
 
-#topSection {
-  height: 700px;
-  background-image: url("assets/background-opacity80.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+#aboutMe1 {
+  background-color: rgb(245, 245, 245);
 }
 
-#titleText {
-  margin: 0;
-  padding: 80px 50px 0 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
-#idText {
-  color: rgb(141, 243, 128);
-  font-size: 2.5em;
-  font-weight: 200;
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0);
 }
 
-#equalSymbol {
+.imgC {
+  height: 60px;
+}
+
+#projectLogos {
+  height: 90%;
+}
+
+#projectLogos:hover {
+  height: 100%;
+}
+
+/* /MODAL STYLING/ */
+.modal-header {
+  height: 35px;
+  background-color: black;
   color: white;
-  font-size: 2.5em;
-  font-weight: 200;
+  align-content: top;
 }
 
-#nameText {
-  color: rgb(245, 235, 101);
-  font-size: 2.5em;
-  font-weight: 200;
+.modal-content {
+  background-color: white;
+  color: rgb(0, 0, 0);
 }
 
-#selfieContainer {
-  margin: 0 20%;
-  height: 200px;
-  width: 200px;
+#githubContainer {
+  height: 50px;
 }
 
-#selfie {
-  height: 100%;
-  border: 7px solid white;
-  border-radius: 50%;
+#githubLogo {
+  height: 70%;
 }
 
-#projectSection {
-  margin: 30px 0;
+#githubLogo:hover {
+  background-color: grey;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0px;
+.btn-outline-secondary.custom-btn {
+  border: none;
 }
 
-.grid-item {
-  height: 300px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+@media (min-width: 576px) {
+  ...;
 }
 
-.portfolioThumbnails {
-  height: 100%;
-  box-shadow: 1px 2px 7px 0 grey;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  ...;
 }
 
-.projectContainer {
-  display: flex;
-  flex-direction: row;
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  ...;
 }
 
-.projectDescription {
-  width: 300px;
-  margin: 30px 0 0 40px;
-}
-
-.imageContainer {
-  height: 500px;
-  width: 300px;
-  margin: 30px 0 80px 100px;
-}
-
-.portfolioThumbnails {
-  margin: 0 0 0 0;
-  height: 100%;
-
-  justify-content: right;
-  box-shadow: 1px 2px 7px 0 grey;
-}
-
-#projects {
-  margin-top: 70px;
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  ...;
 }
