@@ -11,10 +11,14 @@ function animateAboutMe() {
     div3.setAttribute("class", "col col-sm-8 col-lg-10 pb-5");
     let title = document.createElement("h2");
     title.innerText = "About Me";
-    let textBody = document.createElement("p");
-    textBody.innerText =
-      "Hi, I'm Ron Mason, an avid runner and oddly competitive bowler. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quo sint vero neque quidem explicabo magni non quam velit maxime.";
-
+    let textBody1 = document.createElement("p");
+    textBody1.innerText =
+      "Hi,  I'm Ron Mason.  I’m a Front-end Web Developer with a background in technology services sales and business communication.  As a developer, I love the process of designing through code,  and the creative problem solving it entails.  I’m hooked on React and Redux, and basically everything JavaScript.";
+    let br = document.createElement("br");
+    textBody1.appendChild(br);
+    let textBody2 = document.createElement("p");
+    textBody2.innerText =
+      "When I’m not designing the matrix,  I love to spend time with my family and friends,  and I’m an avid runner,  golfer,  and competitive bowler.  An optimist by nature,  the best is always yet to come!";
     let selfImg = document.createElement("img");
     selfImg.setAttribute("id", "selfPic");
     selfImg.setAttribute("src", "assets/self.jpg");
@@ -22,7 +26,8 @@ function animateAboutMe() {
     let hr = document.createElement("hr");
 
     div3.appendChild(title);
-    div3.appendChild(textBody);
+    div3.appendChild(textBody1);
+    div3.appendChild(textBody2);
     div2.appendChild(selfImg);
     div1.appendChild(div2);
     div1.appendChild(div3);

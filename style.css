@@ -87,10 +87,6 @@ footer {
   height: 70%;
 }
 
-#githubLogo:hover {
-  background-color: grey;
-}
-
 .btn-outline-secondary.custom-btn {
   border: none;
 }
