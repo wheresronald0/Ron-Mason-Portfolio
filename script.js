@@ -1,22 +1,40 @@
-$(function() {
-  $('[data-toggle="tooltip"]').tooltip();
-});
+function animateAboutMe() {
+  if (!document.getElementById("selfPicContainer")) {
+    let aboutMeParent = document.getElementById("aboutMe");
+    aboutMeParent.setAttribute("class", "container pt-4 pb-1");
+    let div1 = document.createElement("div");
+    div1.setAttribute("class", "row");
+    let div2 = document.createElement("div");
+    div2.setAttribute("class", "col col-sm-4 col-lg-2");
+    div2.setAttribute("id", "selfPicContainer");
+    let div3 = document.createElement("div");
+    div3.setAttribute("class", "col col-sm-8 col-lg-10 pb-5");
+    let title = document.createElement("h2");
+    title.innerText = "About Me";
+    let textBody = document.createElement("p");
+    textBody.innerText =
+      "Hi, I'm Ron Mason, an avid runner and oddly competitive bowler. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quo sint vero neque quidem explicabo magni non quam velit maxime.";
 
-$(function() {
-  $('[data-toggle="popover"]').popover();
-});
+    let selfImg = document.createElement("img");
+    selfImg.setAttribute("id", "selfPic");
+    selfImg.setAttribute("src", "assets/self.jpg");
 
-// $(function() {
-//   $("#myCarousel").carousel(1);
-// });
+    let hr = document.createElement("hr");
 
-function animateCarousel() {}
+    div3.appendChild(title);
+    div3.appendChild(textBody);
+    div2.appendChild(selfImg);
+    div1.appendChild(div2);
+    div1.appendChild(div3);
 
-//
+    aboutMeParent.appendChild(div1);
+    aboutMeParent.appendChild(hr);
+  }
+}
 
 //VERY WET
 function animateCarousel() {
-  if (!document.getElementById("reactLogo")) {
+  if (!document.getElementById("projectLogos")) {
     //adding footer
     footerAdd = document.getElementById("projectCarousel");
     let footer = document.createElement("footer");
@@ -142,7 +160,7 @@ function animateCarousel() {
 
       let thumbImg = document.createElement("img");
       thumbImg.setAttribute("src", projectImageLocations[i]);
-      thumbImg.setAttribute("id", "reactLogo");
+      thumbImg.setAttribute("id", "projectLogos");
       thumbImg.setAttribute("class", "animated rubberBand delay-1s");
 
       let hr = document.createElement("hr");

@@ -18,6 +18,11 @@ footer {
   background-image: url("assets/code_bg.jpg");
   background-size: cover;
   height: 800px;
+  margin-bottom: 0;
+}
+
+.fas.fa-bars {
+  color: white;
 }
 
 #myName {
@@ -26,21 +31,26 @@ footer {
 #myTitle {
   font-family: "Cutive Mono", monospace;
 }
-#selfPicContainer {
-  height: 100px;
-  width: 100px;
-}
-#selfPicContainer img {
-  height: 100%;
-  border: 1px solid white;
-  border-radius: 50px;
-}
+
 .fab {
   color: rgb(31, 136, 221);
 }
 
 .fas {
   color: grey;
+}
+
+#selfPicContainer {
+  height: 100px;
+}
+#selfPic {
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+#aboutMe1 {
+  background-color: rgb(245, 245, 245);
 }
 
 /* # #tester {
@@ -57,14 +67,14 @@ footer {
 }
 
 .imgC {
-  height: 70px;
+  height: 60px;
 }
 
-#reactLogo {
+#projectLogos {
   height: 90%;
 }
 
-#reactLogo:hover {
+#projectLogos:hover {
   height: 100%;
 }
 
@@ -90,7 +100,12 @@ footer {
 }
 
 #githubLogo {
-  height: 100%;
+  height: 70%;
+  /* border-radius: 50px; */
+}
+
+#githubLogo:hover {
+  background-color: grey;
 }
 
 .btn-outline-secondary.custom-btn {

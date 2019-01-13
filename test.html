@@ -50,7 +50,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
@@ -78,27 +78,27 @@
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <a class="dropdown-item" href="#">
-                      <i class="fas fa-user-circle"></i> Bio</a
+                    <a class="dropdown-item" href="#myTitle" onclick="animateAboutMe()">
+                      <i class="fas fa-user-circle"></i> &nbsp;Bio</a
                     >
                     <a
                       class="dropdown-item"
                       href="assets/Ron Mason Resume_WD.pdf"
                       download
                     >
-                      <i class="fas fa-file"></i> Resume
+                      <i class="fas fa-file"></i> &nbsp;Resume
                     </a>
                     <a
                       class="dropdown-item"
                       href="mailto:wheresronald0@gmail.com@?Subject=Hello"
                     >
-                      <i class="fas fa-at"></i> Get in Touch
+                      <i class="fas fa-at"></i> &nbsp;Get in Touch
                     </a>
                     <a
                       class="dropdown-item"
                       href="https://www.linkedin.com/in/ronnmason/"
                     >
-                      <i class="fab fa-linkedin"></i> Linkedin
+                      <i class="fab fa-linkedin"></i> &nbsp;Linkedin
                     </a>
                   </div>
                 </li>
@@ -128,6 +128,11 @@
       /> -->
     </div>
 
+  
+     <div id="aboutMe"></div>
+
+    
+
     <div class="container" id="tester">
       <div id="projectSelector" class="row"></div>
     </div>
@@ -138,18 +143,6 @@
         class="carousel slide carousel-fade"
         data-ride="carousel"
       >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        </ol>
         <div class="carousel-inner">
           <div
             id="cItem1"
@@ -168,6 +161,9 @@
           <div id="cItem6" class="carousel-item" data-interval="90000"></div>
         </div>
       </div>
+    </div>
+
+    
     </div>
 
     <div
@@ -214,7 +210,7 @@
                       class="btn btn-outline-secondary custom-btn btn-sm"
                       id="githubContainer"
                     >
-                      Visit GitHub
+                     Visit GitHub
                       <img id="githubLogo" src="assets/github.png" />
                     </button>
                   </a>
