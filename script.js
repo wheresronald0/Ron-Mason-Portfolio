@@ -156,12 +156,13 @@ function animateCarousel() {
       anchorTag.setAttribute("data-slide-to", i);
 
       let div2 = document.createElement("div");
+      div2.setAttribute("class", "d-flex justify-content-center text-center");
 
       let aPara = document.createElement("p");
       aPara.innerHTML = names[i];
 
       let div3 = document.createElement("div");
-      div3.setAttribute("class", "imgC");
+      div3.setAttribute("class", "imgC d-flex justify-content-center");
 
       let thumbImg = document.createElement("img");
       thumbImg.setAttribute("src", projectImageLocations[i]);
