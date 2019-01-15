@@ -5,10 +5,10 @@ function animateAboutMe() {
     let div1 = document.createElement("div");
     div1.setAttribute("class", "row");
     let div2 = document.createElement("div");
-    div2.setAttribute("class", "col col-sm-4 col-lg-2");
+    div2.setAttribute("class", "col col-sm-4 col-lg-2 d-none d-sm-block");
     div2.setAttribute("id", "selfPicContainer");
     let div3 = document.createElement("div");
-    div3.setAttribute("class", "col col-sm-8 col-lg-10 pb-5");
+    div3.setAttribute("class", "col col col-xs-12 col-sm-8 col-lg-10 pb-5");
     let title = document.createElement("h2");
     title.innerText = "About Me";
     let textBody1 = document.createElement("p");

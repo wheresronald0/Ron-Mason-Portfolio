@@ -17,6 +17,13 @@ footer {
   color: white;
 }
 
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: #fcda45;
+}
+
 #myName {
   margin-top: 15%;
 }
