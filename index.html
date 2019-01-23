@@ -38,7 +38,7 @@
   </head>
   <body>
     <div id="jumboImage" class="jumbotron jumbotron-fluid p-0 m-0">
-      <div class="container">
+      <div class="container navigation-container">
         <nav class="navbar sticky-top navbar-expand-md">
           <div class="container">
             <button
@@ -57,7 +57,7 @@
                 <li class="nav-item">
                   <a
                     class="nav-link"
-                    href="#tester"
+                    href="#portfolio"
                     onclick="animateCarousel()"
                     >Portfolio</a
                   >
@@ -78,7 +78,7 @@
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <a class="dropdown-item" href="#myTitle" onclick="animateAboutMe()">
+                    <a class="dropdown-item" href="#myBio" onclick="animateAboutMe()">
                       <i class="fas fa-user-circle"></i> &nbsp;Bio</a
                     >
                     <a
@@ -110,21 +110,30 @@
       </div>
 
       <div id="myName" class="container ml-5">
-        <h1 class="text-white">Ron Mason</h1>
-        <h3 id="myTitle">
-          <span class="text-success">id </span
-          ><span class="text-white">= </span>
-          <span class="text-warning">"front-end_developer"</span>
-        </h3>
+        <div class="row">
+          <div class="d-flex flex-column">
+              <div class="col col-xs-3">
+                  <h1 class="text-white">Ron Mason</h1>
+              </div>
+              
+              <div class="col col-xs-3">
+                  <h3 id="myBio">
+                      <span class="text-success">id </span
+                      ><span class="text-white">= </span>
+                      <span class="text-warning">"front-end_developer"</span>
+                    </h3>
+              </div>
+          </div>
+          
+           
+        </div>
+        
       </div>
     </div>
-
   
      <div id="aboutMe"></div>
 
-    
-
-    <div class="container" id="tester">
+    <div class="container" id="portfolio">
       <div id="projectSelector" class="row"></div>
     </div>
 
@@ -167,7 +176,11 @@
     >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-          <div class="modal-header  m-2 p-1"><h4>Crescent City Donuts</h4></div>
+          <div class="modal-header  m-2 p-1"><h4>Crescent City Donuts</h4>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
           <div class="modal-body">
             <p>
               Crescent City Donuts is a factitious New Orleans staple serving
@@ -237,7 +250,11 @@
     >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-          <div class="modal-header  m-2 p-1"><h4>Crescent City Donuts</h4></div>
+          <div class="modal-header  m-2 p-1"><h4>Crescent City Donuts</h4>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
           <div class="modal-body">
             <p>
               Gift-RUN is a factitious non-profit organization committed to
@@ -306,7 +323,11 @@
     >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-          <div class="modal-header  m-2 p-1"><h4>PiQ-Share</h4></div>
+          <div class="modal-header  m-2 p-1"><h4>PiQ-Share</h4>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
           <div class="modal-body">
             <p>
               PiQ Share is a photo cataloging and sharing application that lets
@@ -372,7 +393,11 @@
     >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-          <div class="modal-header  m-2 p-1"><h4>Movie Search</h4></div>
+          <div class="modal-header  m-2 p-1"><h4>Movie Search</h4>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
           <div class="modal-body">
             <p>
               Movie Search is a factitious search site that a movie goer can
@@ -435,7 +460,11 @@
     >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-          <div class="modal-header  m-2 p-1"><h4>Seinfeld Simon</h4></div>
+          <div class="modal-header  m-2 p-1"><h4>Seinfeld Simon</h4>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
           <div class="modal-body">
             <p>
               Seinfeld-Simon is a game for challenging your memory and enjoy.
@@ -494,6 +523,9 @@
         <div class="modal-content">
           <div class="modal-header  m-2 p-1">
             <h4>Fortnite Character Selector</h4>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
           </div>
           <div class="modal-body">
             <p>

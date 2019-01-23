@@ -1,7 +1,7 @@
 function animateAboutMe() {
   if (!document.getElementById("selfPicContainer")) {
     let aboutMeParent = document.getElementById("aboutMe");
-    aboutMeParent.setAttribute("class", "container pt-4 pb-1");
+    aboutMeParent.setAttribute("class", "container pt-4 pb-1 mt-4");
     let div1 = document.createElement("div");
     div1.setAttribute("class", "row");
     let div2 = document.createElement("div");
@@ -12,11 +12,13 @@ function animateAboutMe() {
     let title = document.createElement("h2");
     title.innerText = "About Me";
     let textBody1 = document.createElement("p");
+    textBody1.setAttribute("class", "about-me-text");
     textBody1.innerText =
       "Hi,  I'm Ron Mason.  I’m a Front-end Web Developer with a background in technology services sales and business communication.  As a developer, I love the process of designing through code,  and the creative problem solving it entails.  I’m hooked on React and Redux, and basically everything JavaScript.";
     let br = document.createElement("br");
     textBody1.appendChild(br);
     let textBody2 = document.createElement("p");
+    textBody2.setAttribute("class", "about-me-text");
     textBody2.innerText =
       "When I’m not designing the matrix,  I love to spend time with my family and friends,  and I’m an avid runner,  golfer,  and competitive bowler.  An optimist by nature,  the best is always yet to come!";
     let selfImg = document.createElement("img");
@@ -148,7 +150,7 @@ function animateCarousel() {
       let div1 = document.createElement("div");
       div1.setAttribute(
         "class",
-        "d-flex flex-column flex-direction: column justify-content-end mt-3 mb-2 col-sm-6 col-md-4 col-lg-2 animated bounceInDown delay-0s"
+        "d-flex flex-column flex-direction: column justify-content-end mt-5 mb-2 col-sm-6 col-md-4 col-lg-2 animated bounceInDown delay-0s"
       );
 
       let anchorTag = document.createElement("a");
@@ -158,7 +160,7 @@ function animateCarousel() {
       let div2 = document.createElement("div");
       div2.setAttribute("class", "d-flex justify-content-center text-center");
 
-      let aPara = document.createElement("p");
+      let aPara = document.createElement("h4");
       aPara.innerHTML = names[i];
 
       let div3 = document.createElement("div");
@@ -182,4 +184,8 @@ function animateCarousel() {
       thumbParent.appendChild(div1);
     }
   }
+}
+
+function updateThumbLink() {
+  let projectLogos = document.getElementById("projectLogos");
 }
